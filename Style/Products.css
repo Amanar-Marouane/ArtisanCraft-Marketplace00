@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+
+    --brawn-1 : #DCAE76;  
+    --brawn-2 : #855834;  
+    --brawn-3 : #8A4700;  
+    --brawn-4 : #66360E;  
+    --brawn-5 : #482407;
+
+    --light-brawn : #E6C7AA;
+
+    --black : black;
+    --white : white;
+ 
+    --dark-gray  : #585858; 
+    --light-gray  : #b6b6b6; 
+}
+
+
+ *{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+} 
+
+section{
+    padding:2rem 8%;
+}
+
+.Products_section{
+    display: flex;
+    gap: 50px;
+    
+}
+
+/* ----------------------------------- sidebar -------------------------------------*/
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.icon-filter{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon-filter img{
+    width: 18px;
+}
+
+
+.icon-filter .title{
+    color: var(--dark-gray);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+hr{
+    width:100%;
+    margin: 20px 0;
+    text-align:left;
+    height:0.8px;
+    background-color:var(--light-gray);
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding:12px 0;
+}
+
+.category .cats{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+}
+
+.category .cats h1{
+    font-size: 1.2rem;
+    font-family: "JetBrains Mono";
+    font-weight:600;
+}
+
+.category .cats img{
+    width: 10px;
+}
+
+.category p{
+    padding: 3px 0;
+    color: var(--dark-gray);
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.category p:hover{
+    text-decoration:underline;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+/* ------------------------- Catalogue ----------------------- */
+
+
+.catalogue{
+    width: 70%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter .order{
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+
+.filter .order div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--brawn-3);
+}
+
+.filter .order div img{
+    width: 18px;
+}
+
+
+.catalogue .filter .box select {
+    color: var(--black);
+    padding: 6px;
+    width: 200px;
+    border: 1px solid var(--black);
+    font-size: 15px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .catalogue .filter .box::before {
+    content: "";
+    font-family: "JetBrains Mono";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+  }
+  
+  .catalogue .filter .box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .catalogue .filter .box select option {
+    padding: 30px;
+  }
+
+
+/*----------------------- Produite -------------------------*/
+
+
+.products{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+
+.products .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.products .card .image img{
+    width: 140px;
+}
+
+.products .card h3{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:"JetBrains Mono";
+    color: var(--black);
+}
+
+.products .card .star{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.products .card .star img{
+    width: 10px;
+}
+
