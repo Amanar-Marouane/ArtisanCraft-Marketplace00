@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Righteous&display=swap');
+
+
+/* ----------------la partie du nev bar ------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.partie1{
+    background-color: #482407;
+    margin-top: 0px;
+    height: 45px;
+}
+.partie1 p{
+    text-align: center;
+    margin-top: 0px;
+    color: aliceblue;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 36px;
+    width: 100%;
+}
+.nav-bar{
+    background-color: #E6C7AA;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.nav-bar img{
+    height: 80%;
+    width: 100%;
+    margin-top: 8px;
+     /* text-align: center; */
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 706px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 28px;
+}
+
+.nav-bar ul a{
+    padding: 20px;
+    color: #556866;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-bar .icones{
+    margin-bottom: 32px;
+    margin-left: -10px;
+    margin-right: 32px;
+    margin-top: 19px;
+}
+
+/* ------------section 1 : la photo ------------------ */
+
+
+.section1 div {
+    margin-top: 50px;
+
+}
+
+.section1 div img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* ------------section 2 : les collection ------------------ */
+.section2 .en-tete {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.section2 .en-tete .left-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: none;
+    border-top: 3px solid #134B42;
+    width: 200px;
+}
+.section2 .en-tete .left-2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: none;
+    border-top: 3px solid #134B42;
+    width: 200px;
+    /* margin-top: 8px; */
+
+}
+.section2 .en-tete .right-1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border: none;
+    border-top: 3px solid #134B42;
+    width: 1000px;
+    float: right;
+    /* margin-top: -11px; */
+
+
+}
+.section2 .en-tete .right-2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border: none;
+    border-top: 3px solid #134B42;
+    width: 1000px;
+    float: right;
+
+}
+
+.section2 .en-tete p{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    /* margin-top: ; */
+    font-family: "Righteous", sans-serif;
+    color: #134B42;
+    font-size: 27px;
+    margin-bottom: 31px;
+    /* width: 100px; */
+}
+.section2 .title{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 30px;
+    color: #134B42;
+    text-decoration: underline;
+    text-decoration-color: #134B42;
+    text-align: center;
+
+}
+
+
+
+.section2 .catalogue{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+
+    /* height: 100px; */
+}
+
+.section2 .catalogue .class1{
+    width: 20%;
+    padding: 20px;
+    height: 50%;
+
+}
+
+.section2 .catalogue .class2{
+    width: 20%;
+    padding: 20px;
+    height: 50%;
+    margin-top: 20px;
+
+}
+
+.section2 .catalogue a img{
+    width: 100%;
+    height: 100%;
+}
+
+.section2 .imgfin img{
+    width: 100%;
+}
+
+.section2 .imgfin p{
+    font-family: "Molle", cursive;
+    font-weight: 400;
+    font-style: italic;
+
+    font-size: 50px;
+    color: rgb(132, 43, 43);
+    margin-top: -10%;
+
+}
