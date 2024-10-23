@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Righteous&display=swap');
 
 :root{
     --brawn-1 : #DCAE76;
@@ -26,8 +29,62 @@ body {
 }
 
 /* Header */
+header{
+    display: flex;
+    flex-direction: column;
+}
+.partie1{
+    background-color: #482407;
+    margin-top: 0px;
+    height: 45px;
+}
+.partie1 p{
+    text-align: center;
+    margin-top: 0px;
+    color: aliceblue;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 36px;
+    width: 100%;
+}
+.nav-bar{
+    background-color: #E6C7AA;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
 
+.nav-bar img{
+    height: 80%;
+    width: 100%;
+    margin-top: 8px;
+     /* text-align: center; */
+}
 
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 706px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 28px;
+}
+
+.nav-bar ul a{
+    padding: 20px;
+    color: #556866;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-bar .icones{
+    margin-bottom: 32px;
+    margin-left: -10px;
+    margin-right: 32px;
+    margin-top: 19px;
+}
 
 /* The rest */
 
