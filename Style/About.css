@@ -29,16 +29,18 @@ body {
 }
 
 /* Header */
-header{
+header {
     display: flex;
     flex-direction: column;
 }
-.partie1{
+
+.partie1 {
     background-color: #482407;
     margin-top: 0px;
     height: 45px;
 }
-.partie1 p{
+
+.partie1 p {
     text-align: center;
     margin-top: 0px;
     color: aliceblue;
@@ -46,30 +48,37 @@ header{
     font-size: 36px;
     width: 100%;
 }
-.nav-bar{
+
+.nav-bar .big-div {
     background-color: #E6C7AA;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 80px;
-}
-
-.nav-bar img{
-    height: 80%;
     width: 100%;
-    margin-top: 8px;
-     /* text-align: center; */
 }
 
-.nav-bar ul{
+.nav-bar .big-div img {
+    height: 80%;
+    width: 10%;
+    /* text-align: center; */
+}
+
+.nav-bar .big-div .all{
     display: flex;
     flex-direction: row;
-    margin-left: 706px;
+
+}
+
+.nav-bar .big-div .all div ul {
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
     list-style-type: none;
     margin-top: 28px;
 }
 
-.nav-bar ul a{
+.nav-bar .big-div .all div ul a {
     padding: 20px;
     color: #556866;
     font-family: "JetBrains Mono", monospace;
@@ -78,13 +87,22 @@ header{
     font-size: 18px;
     text-decoration: none;
 }
+.nav-bar .big-div .all .list-icones {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav-bar .big-div .list-icones .icones li img{
+    width: 40px;
+    height: 40%;
+}
 
-.nav-bar .icones{
+/* .nav-bar .icones{
     margin-bottom: 32px;
     margin-left: -10px;
     margin-right: 32px;
     margin-top: 19px;
-}
+} */
 
 /* The rest */
 
