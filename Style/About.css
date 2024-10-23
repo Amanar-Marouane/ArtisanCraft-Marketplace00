@@ -70,7 +70,6 @@ header{
 }
 
 .nav-bar ul a{
-    padding: 20px;
     color: #556866;
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
@@ -87,7 +86,6 @@ header{
 }
 
 /* The rest */
-
 .S1 {
     height: 150px;
     width: 100%;
@@ -149,9 +147,9 @@ header{
 .S2 {
     width: 100%;
     height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr;
 }
 
 .S2 .Back2 {
@@ -163,81 +161,113 @@ header{
 }
 
 .S2 .Back2 img {
-    width: 110%;
-    height: 100%;
-    filter: blur(10px);
-}
-
-.S2 .Content {
     width: 100%;
-    height: 80%;
-    display: flex;
+    height: 95%;
+    overflow: hidden;
+    filter: blur(5px);
 }
 
-.S2 .Content .Img {
-    width: 50%;
-    height: 100%;
+.S2 .Img {
+    grid-column: 1/2;
+    grid-row: 1/4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.S2 .Content .Img img{
+.S2 .Img img {
     width: 80%;
-    object-fit: cover;
+    height: auto;
 }
 
-.S2 .Content .Discription {
-    width: 50%;
-    height: 100%;
+.S2 .Title {
+    grid-column: 2/3;
+    grid-row: 1/2;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.S2 .Content .Discription h1 {
+.S2 .Title h1 {
     width: 100%;
     height: 30%;
     font-size: 40px;
 }
 
-.S2 .Content .Discription .Value {
-    width: 100%;
-    height: 15%;
+.S2 .Value1 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.S2 .Value2 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.S2 .Value1,
+.S2 .Value2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.S2 .Value1 .SVG,
+.S2 .Value2 .SVG {
+    height: 30%;
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 40%;
 }
 
-.S2 .Content .Discription .Value svg {
-    width: 8%;
-    height: auto;
+.S2 .Value1 svg,
+.S2 .Value2 svg {
+    width: 100%;
+    height: 100%;
 }
 
-.S2 .Content .Discription .Value h3 {
-    width: 92%;
+.S2 .Value1 .MiniTitle,
+.S2 .Value2 .MiniTitle {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.S2 .Content .Discription .Value h4 {
-    width: 80%;
+.S2 .Value1 .MiniTitle h3,
+.S2 .Value2 .MiniTitle h3 {
+    font-size: 30px;
+}
+
+.S2 .Value1 .MiniDescription,
+.S2 .Value2 .MiniDescription {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.S2 .Value1 .MiniDescription h4,
+.S2 .Value2 .MiniDescription h4 {
+    width: 90%;
     font-size: 20px;
-    margin-right: 12%;
 }
+
 
 .Back3 {
     top: 0vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: -3;
+    overflow: hidden;
 }
 
 .Back3 img {
     width: 100%;
-}
+} 
 
 .S3 {
     height: 30vh;
@@ -386,6 +416,23 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
+}
+
+.S5 .Content .Stars input {
+    display: none;
+}
+
+.S5 .Content .Stars input + label {
+    cursor: pointer;
+}
+
+.S5 .Content .Stars input:checked ~ label svg {
+    fill: yellow;
+}
+
+.S5 .Content .Stars input:active + label {
+    transform: scale(0.8);
 }
 
 .S5 .Content form {
@@ -403,11 +450,13 @@ header{
     width: 100%;
     resize: none;
     border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: var(--balck);
 }
 
 .S5 .Content form textarea::placeholder {
-    padding-left: 10px;
-    padding-top: 10px;
     font-size: 20px;
     color: var(--balck);
 }
