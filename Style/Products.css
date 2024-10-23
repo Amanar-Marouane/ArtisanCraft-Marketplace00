@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 :root{
 
@@ -15,13 +17,15 @@
  
     --dark-gray  : #585858; 
     --light-gray  : #b6b6b6; 
+
+    --green : rgb(0, 129, 24);
 }
 
 
  *{
     margin:0; padding:0;
     box-sizing: border-box;
-    font-family: "JetBrains Mono", sans-serif;
+    font-family: "Roboto", sans-serif;
     outline: none; border:none;
     text-decoration: none;
     text-transform: capitalize;
@@ -29,7 +33,7 @@
 } 
 
 section{
-    padding:2rem 8%;
+    padding:2rem 5%;
 }
 
 .Products_section{
@@ -85,7 +89,6 @@ hr{
 
 .category .cats h1{
     font-size: 1.2rem;
-    font-family: "JetBrains Mono";
     font-weight:600;
 }
 
@@ -96,7 +99,6 @@ hr{
 .category p{
     padding: 3px 0;
     color: var(--dark-gray);
-    font-family: "JetBrains Mono";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -157,29 +159,14 @@ hr{
     -webkit-appearance: button;
     appearance: button;
     outline: none;
-  }
+}
   
-  .catalogue .filter .box::before {
-    content: "";
-    font-family: "JetBrains Mono";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20%;
-    height: 100%;
-    text-align: center;
-    font-size: 28px;
-    line-height: 45px;
-  }
+
   
-  .catalogue .filter .box:hover::before {
-    color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.2);
-  }
   
-  .catalogue .filter .box select option {
+.catalogue .filter .box select option {
     padding: 30px;
-  }
+}
 
 
 /*----------------------- Produite -------------------------*/
@@ -190,33 +177,69 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+    margin: 25px 0;
+    gap: 30px 0;
+    
 }
-
 
 .products .card{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    row-gap:10px;
+}
+
+.products .card .image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 270px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    overflow:hidden;
 }
 
 .products .card .image img{
-    width: 140px;
+    width: 170px;
+}
+
+.products .card .image img:hover{
+    transform: scale(1.1);
 }
 
 .products .card h3{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
-    font-family:"JetBrains Mono";
     color: var(--black);
+}
+
+.products .card h3:hover{
+    text-decoration:underline;
+    color: var(--black);
+    cursor: pointer;
 }
 
 .products .card .star{
     display: flex;
-    width: 120px;
+    width: 175px;
     justify-content: space-between;
 }
 
-.products .card .star img{
-    width: 10px;
+.products .card .star span{
+    color: var(--dark-gray);
 }
 
+.products .card .star img{
+    width: 18px;
+}
+
+.card .price{
+    font-size: 14px;
+}
+
+.card .price span{
+    font-size: 14px;
+    color: var(--green);
+    text-decoration: line-through;
+}
