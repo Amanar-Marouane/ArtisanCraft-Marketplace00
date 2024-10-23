@@ -1,0 +1,140 @@
+:root{
+    --brawn-1 : #DCAE76;
+    --brawn-2 : #855834;
+    --brawn-3 : #8A4700;
+    --brawn-4 : #66360E;
+    --brawn-5 : #482407;
+    --light-brawn : #E6C7AA;
+    --balck : black;
+    --white : white;
+    --dark-gray  : #585858; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=La+Belle+Aurore&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.div_1 {
+    height: 100vh;
+    background: url("/Contact-img/zalug1.svg") no-repeat center/cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.div_1_h1 {
+    color: white;
+    font-size: 6vh;
+}
+
+
+.div_1_inner {
+    width: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
+.inpt input, textarea {
+    
+    width:400px;
+    height: 50px;
+}
+
+.div-contact{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    border-radius: 35px;
+    background-color: #d9d9d982;
+    margin: 15px;
+}
+
+.contact-input{
+    outline: none;
+    border: none;
+    background-color: #d9d9d900;
+    width: 100%;
+    padding: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+::placeholder{
+    color: #ffffffa2;;
+}
+
+.contact-label{
+    margin-left: 40px;
+}
+
+.icon1{
+    color: #ffffffa2;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    text-align: center;
+    color:#ffffffa2;;
+    font-size: 1.3rem;
+    padding: 18px 24px;
+    background-color: #505F98;
+    border: 1px solid #082055;
+    border-radius: 35px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s;
+    margin-left: 15px;
+}
+
+.contact-btn::after{
+    content: "";
+    position: absolute;
+    background-color:#082055;
+    border-radius: inherit;
+    transition: 0.25s;
+    z-index: -1;
+}
+
+.contact-btn:hover::after{
+    translate: 0;
+}
+
+.contact-btn:hover{
+    background-color: #333eba74;
+}
+
+.section_2 {
+    height: 60vh;
+    background: url("/Contact-img/Group\ 38.png") no-repeat center/cover;
+    margin-top:-2px;
+}
+
+.container {
+    width: 100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
