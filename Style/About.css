@@ -21,7 +21,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -101,7 +100,7 @@ header {
 
 /* The rest */
 .S1 {
-    height: 150px;
+    height: 130px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -119,17 +118,27 @@ header {
     width: 100%;
 }
 
+@media (max-width: 1080px) {
+    .S1 .Back1 {
+        display: none;
+    }
+
+    .S1 {
+        background: var(--light-brawn);
+    }
+}
+
 .S1 .Content {
-    padding-left: 20px;
-    padding-top: 20px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .S1 .Content .Top {
-    width: 100%;
+    width: 98%;
     height: 50%;
 }
 
@@ -138,7 +147,7 @@ header {
     height: 95%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .S1 .Content .Top .CurrPage h1 {
@@ -147,12 +156,11 @@ header {
 }
 
 .S1 .Content .Bottom {
-    width: 32%;
-    height: 50%;
+    width: 98%;
+    height: 30%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    column-gap: 10px;
     font-size: 18px;
 }
 
@@ -160,12 +168,6 @@ header {
 .S1 .Content .Bottom h4 {
     text-decoration: none;
     color: var(--balck);
-}
-
-@media (max-width: 1412px) {
-    .S1 .Content .Top {
-        width: 40%;
-    }
 }
 
 .S2 {
@@ -183,11 +185,14 @@ header {
     height: 100%;
     z-index: -2;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .S2 .Back2 img {
     width: 110%;
-    height: 95%;
+    height: 90%;
     filter: blur(5px);
 }
 
@@ -288,6 +293,7 @@ header {
 }
 
 @media (max-width: 1100px) {
+
     .S2 {
         height: 100vh;
         display: grid;
@@ -309,7 +315,7 @@ header {
     }
 
     .S2 .Img img {
-        width: 30%;
+        width: 40%;
     }
 
 
@@ -371,8 +377,86 @@ header {
         font-weight: 500;
         text-align: center;
     }
+
+    .S2 .Title h1 {
+        font-size: 30px;
+    }
+
+    .S2 .MiniTitle h3 {
+        font-size: 20px;
+    }
+
+    .S2 .MiniDescription h4 {
+        font-size: 17px;
+    }
 }
 
+@media (max-width: 771px) {
+    .S2 .Title h1 {
+        font-size: 30px;
+    }
+
+    .S2 .MiniTitle h3 {
+        font-size: 18px;
+    }
+
+    .S2 .MiniDescription h4 {
+        font-size: 15px;
+        width: 98%;
+    }
+}
+
+@media (max-width: 515px) {
+    .S2 {
+        grid-template-rows: 3fr 0.5fr 3fr;
+    }
+}
+
+@media (max-width: 485px) {
+    .S2 .Title h1 {
+        font-size: 22px;
+    }
+
+    .S2 {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 2fr 2fr;
+        row-gap: 10px;
+    }
+
+    .S2 .Img {
+        grid-row: 1/2;
+    }
+
+    .S2 .Title {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .S2 .Value1 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .S2 .Value2 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .S2 .MiniTitle {
+        width: 30%;
+    }
+
+    .S2 .MiniTitle h3 {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .S2 .MiniDescription h4 {
+        width: 95%;
+        font-size: 15px;
+    }
+}
 
 .Back3 {
     top: 0vh;
@@ -382,14 +466,15 @@ header {
     overflow: hidden;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
     .Back3 {
-        top: 20vh;
+        display: none;
     }
 }
 
 .Back3 img {
     width: 100%;
+    overflow: hidden;
 } 
 
 .S3 {
@@ -398,7 +483,7 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .S3 .Blank {
@@ -418,7 +503,7 @@ header {
 
 .S3 .Content .SP {
     height: 80%;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -433,6 +518,7 @@ header {
 
 .S3 .Content .SP h3 {
     font-size: 20px;
+    text-align: center;
 }
 
 .S3 .Content .SP h3 #Numbers {
@@ -440,7 +526,43 @@ header {
 }
 
 @media (max-width: 1000px) {
+    .S3 .Content .SP svg {
+        width: 40px;
+        height: 40px;
+    }
     
+    .S3 .Content .SP h3 {
+        font-size: 18px;
+    }
+    
+    .S3 .Content .SP h3 #Numbers {
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 845px) {
+    .S3 .Content {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 515px) {
+    .S3 .Content {
+        padding: 0 0px;
+    }
+    .S3 .Content .SP svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .S3 .Content .SP h3 {
+        font-size: 15px;
+    }
+    
+    .S3 .Content .SP h3 #Numbers {
+        font-weight: 800;
+    }
 }
 
 .S4 {
@@ -498,6 +620,112 @@ header {
 
 .S4 .Card #Name {
     font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .S4 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr 2fr 2fr;
+        row-gap: 20px;
+    }
+    
+    .S4 #Title {
+        grid-row: 1/2;
+        grid-column: 1/5;
+        font-size: 30px;
+    
+    }
+    
+    .S4 #Card1 {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    
+    .S4 #Card2 {
+        grid-row: 2/3;
+        grid-column: 3/5;
+        margin: 0;
+    }
+    
+    .S4 #Card3 {
+        grid-row: 3/4;
+        grid-column: 2/4;
+    }
+    
+    .S4 .Card {
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+    .S4 .Card img {
+        width: 90%;
+    }
+    
+    .S4 .Card h2 {
+        font-weight: 100;
+    }
+    
+    .S4 .Card #Name {
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 320px) {
+    .S4 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr 2fr 2fr 2fr;
+        row-gap: 20px;
+    }
+    
+    .S4 #Title {
+        grid-row: 1/2;
+        grid-column: 1/5;
+        font-size: 30px;
+    
+    }
+    
+    .S4 #Card1 {
+        grid-row: 2/3;
+        grid-column: 1/5;
+        margin: 0;
+    }
+    
+    .S4 #Card2 {
+        grid-row: 3/4;
+        grid-column: 1/5;
+        margin: 0;
+    }
+    
+    .S4 #Card3 {
+        grid-row: 4/5;
+        grid-column: 1/5;
+        margin: 0;
+    }
+    
+    .S4 .Card {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+    .S4 .Card img {
+        width: 90%;
+    }
+    
+    .S4 .Card h2 {
+        font-weight: 100;
+    }
+    
+    .S4 .Card #Name {
+        font-weight: 700;
+    }
 }
 
 .S5 svg {
@@ -615,6 +843,22 @@ header {
     font-size: 20px;
 }
 
+@media (max-width: 1100px) {
+    .S5 .Content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .S5 .Content {
+        width: 90%;
+    }
+
+    .S5 .Content form button {
+        width: 50%;
+    }
+}
+
 /* Footer */
 .Footer {
     height: 100px;
@@ -656,7 +900,7 @@ header {
 }
 
 .Footer .Bottom .QuickAccess {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -680,4 +924,62 @@ header {
 .Footer .Bottom .SocialMedia svg {
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 810px) {
+    .Footer {
+        padding-bottom: 10px;
+    }
+
+    .Footer .Bottom {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Footer .Bottom .QuickAccess {
+        width: 100%;
+        height: 50%;
+        justify-content: space-around;
+        border-bottom: 1px solid var(--balck);
+    }
+    
+    .Footer .Bottom .SocialMedia {
+        width: 90%;
+        height: 50%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 520px) {
+    .Footer .Top .Copyrights h5 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Footer .Top .Copyrights h5 {
+        font-size: 10px;
+    }
+
+    .Footer .Bottom .QuickAccess a {
+        font-size: 15px;
+    }
+
+    .Footer .Bottom .QuickAccess {
+        align-items: center;
+    }
+}
+
+@media (max-width: 321px) {
+    .Footer .Top .Copyrights h5 {
+        font-size: 9px;
+    }
+
+    .Footer .Bottom .QuickAccess a {
+        font-size: 12px;
+    }
+
+    .Footer .Bottom .QuickAccess {
+        align-items: center;
+    }
 }
