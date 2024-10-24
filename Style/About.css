@@ -78,12 +78,8 @@ header {
     margin-top: 28px;
 }
 
-<<<<<<< HEAD
-.nav-bar ul a{
-=======
 .nav-bar .big-div .all div ul a {
     padding: 20px;
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
     color: #556866;
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
@@ -176,14 +172,9 @@ header {
     width: 100%;
     height: 90vh;
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1.5fr 1.5fr;
-=======
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 2fr 2fr;
     row-gap: 20px;
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
 }
 
 .S2 .Back2 {
@@ -195,14 +186,8 @@ header {
 }
 
 .S2 .Back2 img {
-<<<<<<< HEAD
-    width: 100%;
-    height: 95%;
-    overflow: hidden;
-=======
     width: 110%;
     height: 95%;
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
     filter: blur(5px);
 }
 
@@ -216,76 +201,22 @@ header {
 
 .S2 .Img img {
     width: 80%;
-<<<<<<< HEAD
-    height: auto;
 }
 
-=======
-}
-
-
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
 .S2 .Title {
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
     justify-content: flex-start;
-<<<<<<< HEAD
-    align-items: flex-start;
-}
-
-.S2 .Title h1 {
-    width: 100%;
-    height: 30%;
-=======
     align-items: center;
 }
 
 .S2 .Title h1 {
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
     font-size: 40px;
     width: 95%;
 }
 
 .S2 .Value1 {
-<<<<<<< HEAD
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-
-.S2 .Value2 {
-    grid-row: 3/4;
-    grid-column: 2/3;
-}
-
-.S2 .Value1,
-.S2 .Value2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.S2 .Value1 .SVG,
-.S2 .Value2 .SVG {
-    height: 30%;
-    width: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.S2 .Value1 svg,
-.S2 .Value2 svg {
-    width: 100%;
-    height: 100%;
-}
-
-.S2 .Value1 .MiniTitle,
-.S2 .Value2 .MiniTitle {
-    width: 90%;
-    height: 30%;
-=======
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
@@ -318,23 +249,11 @@ header {
 .S2 .MiniTitle {
     width: 92%;
     height: 25%;
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-<<<<<<< HEAD
-.S2 .Value1 .MiniTitle h3,
-.S2 .Value2 .MiniTitle h3 {
-    font-size: 30px;
-}
-
-.S2 .Value1 .MiniDescription,
-.S2 .Value2 .MiniDescription {
-    width: 100%;
-    height: 70%;
-=======
 .S2 .MiniTitle h3 {
     width: 90%;
     font-size: 30px;
@@ -343,18 +262,11 @@ header {
 .S2 .MiniDescription {
     width: 100%;
     height: 75%;
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
 
-<<<<<<< HEAD
-.S2 .Value1 .MiniDescription h4,
-.S2 .Value2 .MiniDescription h4 {
-    width: 90%;
-    font-size: 20px;
-=======
 .S2 .MiniDescription h4 {
     width: 90%;
     font-size: 25px;
@@ -459,7 +371,6 @@ header {
         font-weight: 500;
         text-align: center;
     }
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
 }
 
 
@@ -469,15 +380,12 @@ header {
     position: fixed;
     z-index: -3;
     overflow: hidden;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 1100px) {
     .Back3 {
         top: 20vh;
     }
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
 }
 
 .Back3 img {
@@ -687,13 +595,8 @@ header {
     width: 100%;
     resize: none;
     border-radius: 15px;
-<<<<<<< HEAD
-    padding-top: 20px;
-    padding-left: 10px;
-=======
     padding-left: 20px;
     padding-top: 20px;
->>>>>>> c790fa0a2c7f2a11144f373ef26dbe963ea90c78
     font-size: 20px;
     color: var(--balck);
 }
