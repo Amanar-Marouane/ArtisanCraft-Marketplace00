@@ -6,32 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="Style/About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="HEADER">
         <div class="partie1">
             <p>Where hands create what hearts imagine</p>
         </div>
         <nav class="nav-bar">
             <div class="big-div">
-                <img src="icones/logo.svg" alt="logo">
+                <img class="LOGO" src="icones/logo.svg" alt="logo">
+                <input type="checkbox" id="check" class="CHECK">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <div class="all">
                     <div class="links">
-                        <ul>
+                        <ul class="UL1">
                             <li><a href="Home.html">HOME</a></li>
                             <li><a href="Products.html">PRODUCTS</a></li>
                             <li><a href="About.html">ABOUT</a></li>
                             <li><a href="Contact.html">CONTACT</a></li>
-
                         </ul>
                     </div>
                     <div class="list-icones">
                         <ul class="icones">
-                            <li class="ico1"><a href="#"><img src="icones//loupe.svg" alt="loupe"></a></li>
-                            <li class="ico2"><a href="#"><img src="icones//Group.svg" alt="Group"></a></li>
-                            <li class="ico3"><a href="#"><img src="icones//panier.svg" alt="panier"></a></li>
+                            <li class="ico1"><a href="Products.html"><img src="icones//loupe.svg" alt="loupe"></a></li>
+                            <li class="ico2"><a href="Contact.html"><img src="icones//Group.svg" alt="Group"></a></li>
+                            <li class="ico3"><a href="Products.html"><img src="icones//panier.svg" alt="panier"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -297,7 +301,7 @@
                     <a href="Contact.html">CONTACT</a>
                 </div>
                 <div class="SocialMedia">
-                    <a href="#">
+                    <a href="#" data-social="Facebook" style="--accent-color: blue;">
                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_113_188)">
@@ -312,7 +316,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="#" data-social="Instagram" style="--accent-color: #fe107c;">
                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_113_172)">
@@ -333,7 +337,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="#" data-social="LinkeDin" style="--accent-color: skyblue;">
                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -341,7 +345,7 @@
                                 fill="black" />
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="#" data-social="X" style="--accent-color: black;">
                         <svg class="SVG" width="100" height="100" viewBox="0 0 100 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_113_185)">
@@ -350,7 +354,7 @@
                                     fill="black" />
                                 <path
                                     d="M62.234 30.7715H68.7576L54.5051 47.0619L71.2727 69.2289H58.1434L47.8607 55.7844L36.0947 69.2289H29.5668L44.8113 51.8047L28.7266 30.7715H42.1883L51.4832 43.06L62.234 30.7715ZM59.9441 65.3238H63.5594L40.2242 34.4715H36.3453L59.9441 65.3238Z"
-                                    fill="white" />
+                                    fill="#E6C7AA" />
                             </g>
                             <defs>
                                 <clipPath id="clip0_113_185">
@@ -359,7 +363,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="#" data-social="Youtube" style="--accent-color: red;">
                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_113_180)">
