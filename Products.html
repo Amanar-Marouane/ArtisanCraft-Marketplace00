@@ -3,14 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="Style/Products.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <header>
-        <h1>This is Product page</h1>
-    </header>
 
+        <div class="panie">
+            <img src="Products/panier.svg" alt="">
+            <div class="counter">0</div>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <div class="partie1">
+                <p>Where hands create what hearts imagine</p>
+            </div>
+            <nav class="nav-bar">
+                <div class="big-div">
+                    <img src="icones/logo.svg" alt="logo">
+                    <div class="all">
+                        <div class="links">
+                            <ul>
+                                <li><a href="Home.html">HOME</a></li>
+                                <li><a href="Products.html">PRODUCTS</a></li>
+                                <li><a href="About.html">ABOUT</a></li>
+                                <li><a href="Contact.html">CONTACT</a></li>
+    
+                            </ul>
+                        </div>
+                        <div class="list-icones">
+                            <ul class="icones">
+                                <li class="ico1"><a href="#"><img src="icones//loupe.svg" alt="loupe"></a></li>
+                                <li class="ico2"><a href="#"><img src="icones//Group.svg" alt="Group"></a></li>
+                                <li class="ico3"><a href="#"><img src="icones//panier.svg" alt="panier"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
     <section class="Products_section">
 
@@ -30,8 +64,8 @@
                     <img src="Products/Line 10.svg" alt="line">
                 </div>
     
-                <p>Beuaty & Healthy (262)</p>
-                <p>Fashion (598)</p>
+                <p onclick="Ustensiles()">Household Utensils  (262)</p>
+                <p onclick="Vetements()">Fashion (598)</p>
                 <p>Home & Garden (435)</p>
                 <p>Kids (362)</p>
                 <p>Sports (125)</p>
@@ -77,6 +111,7 @@
                 <h1>Catalogue</h1>
                 <p>Home / Shop</p>
             </div>
+
             <div class="filter">
 
                 <div class="order">
@@ -97,29 +132,1596 @@
                   </div>
 
             </div>
-            <div class="products">
+
+            <div class="products" id="produits">
 
                 <article class="card">
+                    <div class="parent">
+                        <div class="image">
+                            <img src="Products/product1.png" alt="">
+                        </div>
+                       
+                        <h3 id="myBtn" onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                        <div class="star">
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <span> (1.5k) </span>
+                        </div>
+                        <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card" onclick="Panier()">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="parent">
                     <div class="image">
-                        <img src="Products/product11.png" alt="">
+                        <img src="Products/product2.png" alt="">
                     </div>
                    
-                    <h3>Mug et Jarre en Argile Faits Main.</h3>
+                    <h3 id="myBtn" onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
                     <div class="star">
                         <img src="Products/star.svg" alt=""> 
                         <img src="Products/star.svg" alt=""> 
                         <img src="Products/star.svg" alt=""> 
                         <img src="Products/star.svg" alt=""> 
                         <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
                     </div>
                     <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product18.webp" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
 
 
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product4.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product5.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product17.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+                    
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product3.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product16.webp" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product15.webp" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product10.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product19.jpg" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product20.jpg" alt="">
+                     
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+                </article>
+
+                
+                <article class="card">
+                    <div class="parent">
+                        <div class="image">
+                            <img src="Products/product1.png" alt="">
+                        </div>
+                       
+                        <h3 id="myBtn" onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                        <div class="star">
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <img src="Products/star.svg" alt=""> 
+                            <span> (1.5k) </span>
+                        </div>
+                        <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                    <img src="/Products/product16.webp" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card" onclick="Panier()">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product2.png" alt="">
+                    </div>
+                   
+                    <h3 id="myBtn" onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product18.webp" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product4.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product5.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product17.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+                    
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product3.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product16.webp" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product15.webp" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product10.png" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <article class="product_details">
+                
+                            <div class="close">
+                                <i class="fa fa-remove" style="font-size:25px"></i>
+                            </div>
+                    
+                            <div class="images">
+                                <div class="main_img">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                                <div class="imgs">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                    <img src="Products/product2.png" alt="artisana product">
+                                </div>
+                            </div>
+                    
+                            <div class="details">
+                    
+                                <h1>Heading Title</h1>
+                                <hr>
+                                <div class="reduction">40 % de réduction</div>
+                    
+                                <div class="stars">
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <img src="Products/star.svg" alt=""> 
+                                    <span>(4.7k)</span>
+                                </div>
+                    
+                                <p class="price">235.25 MAD <span>650.84 MAD</span></p>
+                                <h4>About This Item</h4>
+                                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima, aut et modi harum consectetur odit nihil, dolorum molestiae dicta sed hic repudiandae cum quaerat ab tenetur. Quos, eveniet. Esse </p>
+                                <div>
+                                    <button class="add_to_card">Add To Card &nbsp;
+                                        <i class="fa fa-credit-card-alt" style="font-size:14px"></i>
+                                    </button>
+                                    <button class="favorit">
+                                        Favorit &nbsp;
+                                        <i class="fa fa-heart" style="font-size:15px;"></i>
+                                    </button>
+                                </div>
+                    
+                            </div>
+                    
+                        </article>
+                
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product19.jpg" alt="">
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="parent">
+                    <div class="image">
+                        <img src="Products/product20.jpg" alt="">
+                     
+                    </div>
+                   
+                    <h3 onclick="Display_Modal()">Mug et Jarre en Argile Faits Main.</h3>
+                    <div class="star">
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <img src="Products/star.svg" alt=""> 
+                        <span> (1.5k) </span>
+                    </div>
+                    <p class="price">2021.23 MAD <span>421.23 MAD</span></p>
+                    </div>
                 </article>
 
             </div>
     
-    
+            <div class="pagination">
+
+                <div class="item_btn active_btn">1</div>
+                <div class="item_btn">2</div>
+                <div class="item_btn">3</div>
+                <div class="item_btn">4</div>
+                <div class="item_btn">
+                    <i style="font-size:15px;color:black;" class="fa">&#xf178;</i>
+                </div>
+
+            </div>
+
         </div>
 
     </section>
@@ -127,5 +1729,38 @@
 
     <footer></footer>
 
+    <script>
+
+        var modal = document.getElementById("myModal");
+        
+        var btn = document.getElementById("myBtn");
+        
+        var span = document.getElementsByClassName("close")[0];
+
+        var counter = document.getElementsByClassName("counter")[0];
+
+        function Display_Modal(){
+            modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        var i = 0;
+        function Panier(){
+            i++;
+            counter.innerHTML = i;
+        }
+
+    
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+        <script src="Style/main.js"></script>
 </body>
 </html>
