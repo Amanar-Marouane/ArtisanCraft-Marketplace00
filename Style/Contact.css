@@ -18,6 +18,7 @@
 }
 
 
+
 .div_1 {
     height: 100vh;
     background: url("/Contact-img/zalug1.svg") no-repeat center/cover;
@@ -25,14 +26,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -50px;
 }
 
 
 
 .div_1_h1 {
     color: white;
-    font-size: 6vh;
+    font-size: 3vw;
 }
+
 
 
 .div_1_inner {
@@ -119,10 +122,11 @@
 }
 
 .section_2 {
-    height: 60vh;
+    height: 13vw;
     background: url("/Contact-img/Group\ 38.png") no-repeat center/cover;
-    margin-top:-2px;
+    margin-top:-15px;
 }
+
 
 .container {
     width: 100%;
@@ -137,4 +141,141 @@
 iframe {
     width: 100%;
     height: 100%;
+}
+
+
+.Footer {
+    height: 100px;
+    width: 100%;
+    background: var(--brawn-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.FooterContainer {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Footer .Top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid var(--balck);
+}
+
+.Footer .Top .Copyrights {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.Footer .Bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Footer .Bottom .QuickAccess {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+
+.Footer .Bottom .QuickAccess a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.Footer .Bottom .SocialMedia {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+
+.Footer .Bottom .SocialMedia svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+.partie1{
+    background-color: #482407;
+    margin-top: 0px;
+    height: 45px;
+}
+.partie1 p{
+    text-align: center;
+    margin-top: 0px;
+    color: aliceblue;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 36px;
+    width: 100%;
+}
+.nav-bar{
+    background-color: #E6C7AA;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.nav-bar img{
+    height: 80%;
+    width: 100%;
+    margin-top: 8px;
+     /* text-align: center; */
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 706px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 28px;
+}
+
+.nav-bar ul a{
+    padding: 20px;
+    color: #556866;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-bar .icones{
+    margin-bottom: 32px;
+    margin-left: -10px;
+    margin-right: 32px;
+    margin-top: 19px;
+}
+
+.container iframe {
+    position: relative;
+}
+
+.container h1 {
+    position: absolute;
+    font-size: 5vw;
 }
