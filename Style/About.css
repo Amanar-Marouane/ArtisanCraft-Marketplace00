@@ -163,10 +163,10 @@ header {
     .nav-bar .big-div .list-icones .icones {
         position: fixed;
         width: 100%;
-        height: 31vh;
+        height: 34vh;
         background: var(--light-brawn);
         right: 0;
-        top: 15vh;
+        top: 13vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -189,6 +189,10 @@ header {
 
     .CHECK:checked ~ .all {
         display: block;
+    }
+
+    .HEADER {
+        position: fixed;
     }
 }
 
