@@ -18,6 +18,7 @@
 }
 
 
+
 .div_1 {
     height: 100vh;
     background: url("/Contact-img/zalug1.svg") no-repeat center/cover;
@@ -32,8 +33,9 @@
 
 .div_1_h1 {
     color: white;
-    font-size: 6vh;
+    font-size: 3vw;
 }
+
 
 
 .div_1_inner {
@@ -120,10 +122,11 @@
 }
 
 .section_2 {
-    height: 60vh;
+    height: 13vw;
     background: url("/Contact-img/Group\ 38.png") no-repeat center/cover;
-    margin-top:-2px;
+    margin-top:-15px;
 }
+
 
 .container {
     width: 100%;
@@ -180,6 +183,7 @@ iframe {
     align-items: center;
 }
 
+
 .Footer .Bottom .QuickAccess {
     width: 40%;
     height: 100%;
@@ -187,6 +191,7 @@ iframe {
     justify-content: space-between;
     font-size: 18px;
 }
+
 
 .Footer .Bottom .QuickAccess a {
     text-decoration: none;
@@ -201,6 +206,7 @@ iframe {
     align-items: flex-start;
     margin-top: 5px;
 }
+
 
 .Footer .Bottom .SocialMedia svg {
     width: 20px;
@@ -263,4 +269,13 @@ header{
     margin-left: -10px;
     margin-right: 32px;
     margin-top: 19px;
+}
+
+.container iframe {
+    position: relative;
+}
+
+.container h1 {
+    position: absolute;
+    font-size: 5vw;
 }
