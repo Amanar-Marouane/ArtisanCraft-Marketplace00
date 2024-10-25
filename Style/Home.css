@@ -4,12 +4,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Molle&family=Righteous&display=swap');
 
 
-/* ----------------la partie du nev bar ------------------*/
+:root {
+    --brawn-1: #DCAE76;
+    --brawn-2: #855834;
+    --brawn-3: #8A4700;
+    --brawn-4: #66360E;
+    --brawn-5: #482407;
+
+    --light-brawn: #E6C7AA;
+
+    --balck: black;
+    --white: white;
+
+    --dark-gray: #585858;
+}
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+
+/* ----------------la partie du nev bar ------------------*/
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
 
 header {
     display: flex;
@@ -46,7 +68,7 @@ header {
     /* text-align: center; */
 }
 
-.nav-bar .big-div .all{
+.nav-bar .big-div .all {
     display: flex;
     flex-direction: row;
 
@@ -69,12 +91,14 @@ header {
     font-size: 18px;
     text-decoration: none;
 }
+
 .nav-bar .big-div .all .list-icones {
     display: flex;
     justify-content: space-around;
-    
+
 }
-.nav-bar .big-div .list-icones .icones li img{
+
+.nav-bar .big-div .list-icones .icones li img {
     width: 40px;
     height: 40%;
 }
@@ -88,30 +112,32 @@ header {
 
 
 body
-
 /* ------------section 1 : la photo ------------------ */
 
-.sections{
+.sections {
     display: flex;
     flex-direction: column;
 }
+
 .sections .section1 div {
     margin-top: 50px;
 
 }
 
 .sections .section1 div img {
-    margin-top: 50px;
+    margin-top: 8%;
+    /* margin-top: 50px;  =============== */
     width: 100%;
 }
 
 /* ------------section 2 : les collection ------------------ */
 .sections .section2 .en-tete {
-    margin-top: 30px;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 14px;
+
 }
 
 .sections .section2 .en-tete .left-1 {
@@ -119,7 +145,9 @@ body
     grid-row: 1/2;
     border: none;
     border-top: 3px solid #134B42;
-    width: 592px;
+    /* width: 40%; */
+
+
 }
 
 .sections .section2 .en-tete .left-2 {
@@ -127,8 +155,8 @@ body
     grid-row: 2/3;
     border: none;
     border-top: 3px solid #134B42;
-    width: 592px;
-    /* margin-top: 8px; */
+    /* width: 40%; */
+
 
 }
 
@@ -137,9 +165,8 @@ body
     grid-row: 1/2;
     border: none;
     border-top: 3px solid #134B42;
-    width: 975px;
+    /* width: 40%; */
     float: right;
-    /* margin-top: -11px; */
 
 
 }
@@ -149,7 +176,7 @@ body
     grid-row: 2/3;
     border: none;
     border-top: 3px solid #134B42;
-    width: 975px;
+    /* width: 40%; */
     float: right;
 
 }
@@ -161,8 +188,13 @@ body
     font-family: "Righteous", sans-serif;
     color: #134B42;
     font-size: 27px;
+    margin-left: 20%;
     margin-bottom: 31px;
     width: 215px;
+    /* ici */
+    line-height: 20px;
+    /* Même valeur que la hauteur */
+    text-align: center;
 
 }
 
@@ -192,6 +224,8 @@ body
     width: 20%;
     padding: 20px;
     height: 50%;
+    border-radius: 50px;
+
 
 }
 
@@ -200,85 +234,282 @@ body
     padding: 20px;
     height: 50%;
     margin-top: 20px;
+    border-radius: 50px;
+
 
 }
 
-.sections .section2 .catalogue a img {
-    width: 100%;
+ .sections .section2 .catalogue a img {
+    width: 30%;
     height: 100%;
 }
+   
 
 .sections .section2 .imgfin img {
     width: 100%;
 }
 
 .sections .section2 .imgfin p {
-    font-family: "Molle", cursive;
+    font-family: "La Belle Aurore", cursive;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 
     font-size: 50px;
     color: white;
     margin-top: -20%;
     margin-left: 50%;
+    /* margin-bottom: 50px; */
 
 }
 
+
+
 /* partie3 */
-.sections .section3 .en-tete {
-    margin-top: 30px;
+.section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3%;
+    /* margin-top: 220px; ==================== */
+    margin-bottom: 5%;
+
+}
+
+.section3 .en-tete {
+    margin-top: 12%;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    gap: 20px;
 }
 
-.sections .section3 .en-tete .left-1 {
+.section3 .en-tete .left-1 {
     grid-column: 1/2;
     grid-row: 1/2;
     border: none;
     border-top: 3px solid #134B42;
-    width: 200px;
+    /* width: 40%; */
 }
 
-.sections .section3 .en-tete .left-2 {
+.section3 .en-tete .left-2 {
     grid-column: 1/2;
     grid-row: 2/3;
     border: none;
     border-top: 3px solid #134B42;
-    width: 200px;
+    /* width: 40%; */
+
     /* margin-top: 8px; */
 
 }
 
-.sections .section3 .en-tete .right-1 {
+.section3 .en-tete .right-1 {
     grid-column: 3/4;
     grid-row: 1/2;
     border: none;
     border-top: 3px solid #134B42;
-    width: 1000px;
+    /* width: 40%; */
+
     float: right;
     /* margin-top: -11px; */
 
 
 }
 
-.sections .section3 .en-tete .right-2 {
+.section3 .en-tete .right-2 {
     grid-column: 3/4;
     grid-row: 2/3;
     border: none;
     border-top: 3px solid #134B42;
-    width: 1000px;
+    /* width: 40%; */
+
     float: right;
 
 }
 
-.sections .section3 .en-tete p {
+.section3 .en-tete p {
     grid-column: 2/3;
     grid-row: 1/3;
     /* margin-top: ; */
     font-family: "Righteous", sans-serif;
     color: #134B42;
     font-size: 27px;
-    margin-bottom: 31px;
-    /* width: 100px; */
+    margin-bottom: 19px;
+    width: 215px;
+    margin-left: 37%;
+
+}
+
+.section3 .Gallery {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.section3 .Gallery .class1 {
+    height: 20%;
+    width: 20%;
+    padding-top: 5%;
+}
+
+
+
+/* footer */
+.Footer {
+    height: 100px;
+    width: 100%;
+    background: var(--brawn-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.FooterContainer {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Footer .Top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid var(--balck);
+}
+
+.Footer .Top .Copyrights {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.Footer .Bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer .Bottom .QuickAccess {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.Footer .Bottom .QuickAccess a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.Footer .Bottom .SocialMedia {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.Footer .Bottom .SocialMedia svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+/* ========================responsive =========================== */
+
+@media screen and (max-width: 768px ) and (min-width: 429px ) {
+
+
+    .sections .section2 .en-tete p{
+    margin-left: 1%; 
+    margin-bottom: 1%;
+    }
+    .section3 .en-tete p{
+        margin-bottom: 0%;
+    }
+
+    .sections .section2 .title{
+        margin-top: 5%;
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+
+    .sections .section2 .en-tete p {
+        font-size: 18px;
+        gap: 0px;
+        margin-left: 0%;
+        width: 128px;
+    }
+
+    .sections .section2 .title {
+        font-size: 15px;
+
+
+
+    }
+
+    .sections .section2 .catalogue .class1 {
+        width: 21%;
+        padding: 8px;
+        border-radius: 50px;
+    }
+
+    .sections .section2 .catalogue .class2 {
+        width: 21%;
+        padding: 4px;
+        height: 50%;
+        margin-top: 6%;
+        border-radius: 50px;
+
+    }
+    .sections .section2 .imgfin img{
+        /* visibility: hidden; */
+    }
+    .sections .section2 .imgfin p {
+        font-family: "La Belle Aurore", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        color: white;
+        /* margin-top: 0%; */
+        /* margin-left: 29%; */
+        /* margin-bottom: 50px; */
+        /* /* text-decoration: underline; */
+    }
+
+    .section3 {
+        margin-top: 0px;
+    }
+
+    .section3 .en-tete {
+        font-size: 18px;
+        gap: 0px;
+    }
+
+    .section3 .en-tete p {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        font-family: "Righteous", sans-serif;
+        color: #134B42;
+        font-size: 21px;
+        margin-bottom: 19px;
+        margin-left: 20%;
+        width: 90px;
+    }
 }
